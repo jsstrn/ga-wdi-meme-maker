@@ -27,5 +27,3 @@ node_modules/
 
 # Distribution directory
 app/dist/
-
-app/dist/meme.js
