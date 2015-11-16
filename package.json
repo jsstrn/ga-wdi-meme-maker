@@ -15,8 +15,15 @@
     "watchify": "^3.6.1"
   },
   "scripts": {
+    "start": "npm run build && npm run start-server",
+    "start-server": "http-server app/dist",
     "test": "standard",
-    "watch-js": "watchify "
+    "clean": "rm -rf app/dist && mkdir app/dist",
+    "build": "npm run clean && npm run build-files",
+    "build-files": "npm run build-html && npm run build-css && npm run build-js",
+    "build-html": "cp app/index.html app/dist/index.html",
+    "build-css": "cp app/style.css app/dist/style.css",
+    "build-js": "browserify app/meme.js -o app/dist/meme.js -t babelify"
   },
   "repository": {
     "type": "git",
