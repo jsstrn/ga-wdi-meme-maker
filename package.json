@@ -1,5 +1,5 @@
 {
-  "name": "ga-wdi-meme-maker",
+  "name": "Meme Maker",
   "version": "1.0.0",
   "description": "A simple meme maker written in JavaScript",
   "main": "meme.js",
@@ -23,7 +23,12 @@
     "build-files": "npm run build-html && npm run build-css && npm run build-js",
     "build-html": "cp app/index.html app/dist/index.html",
     "build-css": "cp app/style.css app/dist/style.css",
-    "build-js": "browserify app/meme.js -o app/dist/meme.js -t babelify"
+    "build-js": "browserify app/meme.js -o app/dist/meme.js -t babelify",
+    "watch": "npm run build && npm run watch-files & npm run start-server",
+    "watch-files": "npm run watch-html & npm run watch-css & npm run watch-js",
+    "watch-html": "watch-spawn -p 'app/index.html' npm run build-html",
+    "watch-css": "watch-spawn -p 'app/style.css' npm run build-css",
+    "watch-js": "watchify app/meme.js -o app/dist/meme.js -t babelify -v"
   },
   "repository": {
     "type": "git",
