@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML5 Canvas</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Meme Generator</h1>
+    <h2 id="yo">OK</h2>
+    <div class="wrapper">
+      <canvas id="canvas" width="500" height="500">
+        <!-- fallback -->
+        <img src="img/notsupported.png" alt="Your browser does not support HTML5 canvas">
+      </canvas>
+    </div>
+    <form class="" action="index.html" method="post">
+      <input id="image" type="file" name="" onchange="uploadImage()">
+      <label for="textTop">Text Top</label>
+      <input id="inputTextTop" type="text" value="Your Text Here">
+      <label for="textBottom">Text Bottom</label>
+      <input id="inputTextBottom" type="text" value="Your Text Here">
+      <button type="button" name="button">
+        Create Meme
+      </button>
+    </form>
+    <!-- script.js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
