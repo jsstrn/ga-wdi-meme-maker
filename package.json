@@ -1,0 +1,32 @@
+{
+  "name": "ga-wdi-meme-maker",
+  "version": "1.0.0",
+  "description": "A simple meme maker written in JavaScript",
+  "main": "meme.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "browserify": "^12.0.1",
+    "babelify": "^7.2.0",
+    "http-server": "^0.8.5",
+    "standard": "^5.3.1"
+  },
+  "devDependencies": {
+    "watch-spawn": "^1.0.6",
+    "watchify": "^3.6.1"
+  },
+  "scripts": {
+    "start": "",
+    "start-server": "npm run http-server"
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsstrn/ga-wdi-meme-maker.git"
+  },
+  "author": "Jesstern Rays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsstrn/ga-wdi-meme-maker/issues"
+  },
+  "homepage": "https://github.com/jsstrn/ga-wdi-meme-maker#readme"
+}
