@@ -15,9 +15,8 @@
     "watchify": "^3.6.1"
   },
   "scripts": {
-    "start": "",
-    "start-server": "npm run http-server"
-    "test": "standard"
+    "test": "standard",
+    "watch-js": "watchify "
   },
   "repository": {
     "type": "git",
