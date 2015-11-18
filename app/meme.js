@@ -41,4 +41,6 @@ function submitButtonClicked (event) {
 
 window.onload = function () {
   drawCanvas(null, 'Yo', 'Wassup????')
+  var uploadFile = document.querySelector('input[type=file]')
+  uploadFile.addEventListener('change', submitButtonClicked, false)
 }
