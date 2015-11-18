@@ -32,7 +32,7 @@ var submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitButtonClicked, false)
 
 function submitButtonClicked (event) {
-  
+  var img = new Image()
   img.src = event.target.value
   var textTop = document.getElementById('textTop').value
   var textBottom = document.getElementById('textBottom').value
