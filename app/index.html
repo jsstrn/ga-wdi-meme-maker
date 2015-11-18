@@ -10,16 +10,22 @@
     <div class="wrapper">
       <canvas id="canvas">
         <!-- fallback -->
-        <img src="app/img/notsupported.png" alt="Your browser does not support HTML5 canvas">
+        <img src="img/notsupported.png" alt="Your browser does not support HTML5 canvas">
       </canvas>
     </div>
     <form>
-      <input id="image" type="file" name="" onchange="uploadImage()">
-      <label for="textTop">Text Top</label>
-      <input id="inputTextTop" type="text" value="Your Text Here">
-      <label for="textBottom">Text Bottom</label>
-      <input id="inputTextBottom" type="text" value="Your Text Here">
-      <button type="button" name="button">Create Meme</button>
+      <div class="">
+        <input id="textTop" type="text" placeholder="Top Text">
+      </div>
+      <div class="">
+        <input id="textBottom" type="text" placeholder="Bottom Text">
+      </div>
+      <div class="">
+        <input type="file">
+      </div>
+      <div class="">
+        <button id="submitButton" type="submit" name="button">Create Meme</button>
+      </div>
     </form>
     <!-- script.js -->
     <script src="meme.js"></script>
