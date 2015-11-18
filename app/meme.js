@@ -10,13 +10,8 @@ function drawCanvas (img, textTop, textBottom) {
     img.src = 'img/doge.jpg'
   }
   img.onload = function () {
-    renderImage() // render image
-    renderText() // render text
-  }
-  function renderImage () {
+    // render image
     context.drawImage(img, 0, 0, canvas.width, canvas.height)
-  }
-  function renderText () {
     // define text styles
     context.font = 'bold 3em sans-serif'
     context.textAlign = 'center'
