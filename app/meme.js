@@ -26,10 +26,17 @@ function drawCanvas (img, textTop, textBottom) {
 let submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitButtonClicked, false)
 function submitButtonClicked (event) {
+  let reader = new FileReader()
+  reader.onloadend = function () {
+    console.log(reader.result)
+  }
+
   let img = new Image()
   img.src = event.target.value
+
   let textTop = document.getElementById('textTop').value
   let textBottom = document.getElementById('textBottom').value
+
   drawCanvas(img, textTop, textBottom)
 }
 
