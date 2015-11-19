@@ -1,6 +1,6 @@
 function drawCanvas (img, textTop, textBottom) {
-  var canvas = document.getElementById('canvas')
-  var context = canvas.getContext('2d')
+  let canvas = document.getElementById('canvas')
+  let context = canvas.getContext('2d')
   canvas.width = Math.min(500, window.innerWidth - 100)
   canvas.height = Math.min(500, window.innerWidth - 100)
   console.log(img)
@@ -23,19 +23,18 @@ function drawCanvas (img, textTop, textBottom) {
   }
 }
 
-var submitButton = document.getElementById('submitButton')
+let submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitButtonClicked, false)
-
 function submitButtonClicked (event) {
-  var img = new Image()
+  let img = new Image()
   img.src = event.target.value
-  var textTop = document.getElementById('textTop').value
-  var textBottom = document.getElementById('textBottom').value
+  let textTop = document.getElementById('textTop').value
+  let textBottom = document.getElementById('textBottom').value
   drawCanvas(img, textTop, textBottom)
 }
 
 window.onload = function () {
   drawCanvas(null, 'Yo', 'Wassup????')
-  var uploadFile = document.querySelector('input[type=file]')
+  let uploadFile = document.querySelector('input[type=file]')
   uploadFile.addEventListener('change', submitButtonClicked, false)
 }
