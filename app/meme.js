@@ -1,3 +1,5 @@
+/* global Image, FileReader */
+
 function drawCanvas (img, textTop, textBottom) {
   let canvas = document.getElementById('canvas')
   let context = canvas.getContext('2d')
@@ -28,7 +30,7 @@ submitButton.addEventListener('click', submitButtonClicked, false)
 function submitButtonClicked (event) {
   let reader = new FileReader()
   reader.onloadend = function () {
-    console.log(reader.result)
+    console.log(reader.readAsDataURL(event))
   }
 
   let img = new Image()
