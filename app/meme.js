@@ -1,4 +1,4 @@
-/* global Image, FileReader */
+/* global Image, URL */
 
 function drawCanvas (img, textTop, textBottom) {
   let canvas = document.getElementById('canvas')
@@ -28,13 +28,13 @@ function drawCanvas (img, textTop, textBottom) {
 let submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitButtonClicked, false)
 function submitButtonClicked (event) {
-  let reader = new FileReader()
-  reader.onloadend = function () {
-    console.log(reader.readAsDataURL(event))
-  }
+  // let reader = new FileReader()
+  // reader.onloadend = function () {
+  //   console.log(reader.readAsDataURL(event))
+  // }
 
   let img = new Image()
-  img.src = event.target.value
+  img.src = URL.createObjectURL(event.target.files[0])
 
   let textTop = document.getElementById('textTop').value
   let textBottom = document.getElementById('textBottom').value
