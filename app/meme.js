@@ -27,12 +27,8 @@ function drawCanvas (img, textTop, textBottom) {
 
 let submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitButtonClicked, false)
-function submitButtonClicked (event) {
-  // let reader = new FileReader()
-  // reader.onloadend = function () {
-  //   console.log(reader.readAsDataURL(event))
-  // }
 
+function submitButtonClicked (event) {
   let img = new Image()
   img.src = URL.createObjectURL(event.target.files[0])
 
