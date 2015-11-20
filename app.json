@@ -1,0 +1,7 @@
+{
+  "name":"ga-wdi-meme-maker",
+  "description":"A simple meme maker written in JavaScript",
+  "scripts":{},
+  "env":{},
+  "addons":[]
+}
