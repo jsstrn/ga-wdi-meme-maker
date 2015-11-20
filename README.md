@@ -1,5 +1,7 @@
 # Meme Maker
+
 ![Travis Build Status](https://travis-ci.org/jsstrn/ga-wdi-meme-maker.svg?branch=master)
+
 A meme maker written in JavaScript
 
 ## For development
