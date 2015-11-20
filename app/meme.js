@@ -1,4 +1,4 @@
-/* global Image, FileReader */
+/* global Image */
 
 function drawCanvas (img, textTop, textBottom) {
   var canvas = document.getElementById('canvas')
