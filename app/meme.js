@@ -1,3 +1,5 @@
+/* global Image, FileReader */
+
 function drawCanvas (img, textTop, textBottom) {
   var canvas = document.getElementById('canvas')
   var context = canvas.getContext('2d')
